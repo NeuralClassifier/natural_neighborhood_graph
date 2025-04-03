@@ -20,7 +20,7 @@ from math import sqrt
 def get_data(df_name):
 
     
-    df_path = 'C:\\Research\\AlbertaResearch\\RankAggregation\\real_life_dfs\\df_to_consider\\'
+    df_path = './df_to_consider'
     df_train = pd.read_csv(df_path+df_name+'_train.csv')
     df_train.drop(['Unnamed: 0'],axis=1,inplace=True)
     df_test = pd.read_csv(df_path+df_name+'_test.csv')
